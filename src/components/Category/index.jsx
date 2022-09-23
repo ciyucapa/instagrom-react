@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from 'prop-types';
+import {Anchor, Image} from './style'
 
 const Category = ({src, alt, href}) => (
-    <a href={href}>
-        <img src={src} alt={alt} />
-    </a>
+    <Anchor href={href}>
+        <Image src={src} alt={alt} />
+    </Anchor>
 );
 
 Category.propTypes = {
